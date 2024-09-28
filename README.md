@@ -11,6 +11,16 @@ Este projeto é um **Conversor de Bases Numéricas** com suporte à tabela ASCII
 - 🔄 Conversão entre bases numéricas (Binário, Octal, Decimal e Hexadecimal).
 - 📜 Exibição e consulta da Tabela ASCII.
 - 💻 Interface simples e intuitiva para uso acadêmico.
+
+
+## 🖥️ Compatibilidade
+
+O conversor foi projetado para ser utilizado em **telas de computador**, proporcionando uma interface mais ampla e confortável para os usuários.
+
+## 🌐 Acesse o Projeto
+
+Você pode acessar o projeto hospedado através do seguinte link: [Seu Projeto Aqui](link-do-seu-site)
+
   
 ## 🎯 Objetivo
 
