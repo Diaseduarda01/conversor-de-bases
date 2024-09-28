@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    background-color: #cea2e4;
+    border-bottom: 5px solid #9a47c0;
+
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.titulo {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.navbar a,
+li {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url("img/banner.png");
+    background-size: cover;
+    position: relative; /* Para que o overlay seja posicionado corretamente */
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05); /* Adiciona uma cor preta com 50% de opacidade */
+    z-index: 1;
+}
+
+
+.banner .container p {
+    margin: 0;
+    color: white;
+    font-size: 34px;
+    width: 150px;
+
+}
+
+.banner .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner .container p span {
+    font-weight: bold;
+
+}
+
+
+.social {
+    height: 700px;
+    width: 100%;
+    background-color: #dcdcdc77;
+
+}
+
+.social .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 250px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 9px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    text-align: center;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    height: 120px;
+    background-color: #9a47c0;
+
+}
+
+.footer .container {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.cssbuttons-io-button {
+    background: #9a47c0;
+    color: white;
+    font-family: inherit;
+    padding: 5px;
+    /* Reduzido */
+    padding-left: 0.8em;
+    /* Reduzido */
+    font-size: 15px;
+    /* Reduzido */
+    font-weight: 500;
+    border-radius: 0.6em;
+    /* Reduzido */
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.2em -0.4em #9a47c0;
+    /* Reduzido */
+    overflow: hidden;
+    position: relative;
+    height: 2.2em;
+    /* Reduzido */
+    padding-right: 2.5em;
+    /* Reduzido */
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    left: 20px;
+
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 0.8em;
+    /* Reduzido */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.8em;
+    /* Reduzido */
+    width: 1.8em;
+    /* Reduzido */
+    border-radius: 0.6em;
+    /* Reduzido */
+    box-shadow: 0.1em 0.1em 0.4em 0.2em #9a47c0;
+    /* Reduzido */
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1em;
+    /* Reduzido */
+    transition: transform 0.3s;
+    color: #9a47c0;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+
+
+/* Estilizando o select */
+select {
+    appearance: none;
+    /* Remove o estilo padrão do select */
+    width: 200px;
+    padding: 8px;
+    font-size: 13px;
+    color: #363636;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 .4vw rgba(0, 0, 0, 0.3), 0 0 0 .10vw transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Adiciona um ícone personalizado de seta para o select */
+select::-ms-expand {
+    display: none;
+    /* Remove a seta padrão do IE */
+}
+
+.select-container::after {
+    content: '▼';
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #9a47c0;
+    pointer-events: none;
+}
+
+/* Estilizando o hover e o foco */
+select:hover,
+select:focus {
+    border-color: #9a47c0;
+}
+
+input {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    width: 170px;
+    color: #363636;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 .4vw rgba(0, 0, 0, 0.3), 0 0 0 .10vw transparent;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0.6vw;
+    transition: .4s;
+}
+
+input:hover {
+    box-shadow: 0 0 0 .15vw #9a47c0;
+}
+
+
+
+.sociall {
+    height: 400px;
+    width: 100%;
+    background-color: #dcdcdc25;
+
+}
+
+.sociall .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxess {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 9px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    text-align: center;
+    align-items: center;
+}

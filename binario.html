@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base Binária</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bases.css">
+  <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <a href="index.html" class="titulo">
+        <h1>Conversor de Bases</h1>
+      </a>
+      <ul class="navbar">
+        <li class="agora">
+          <a href="Octal.html"> Octal</a>
+        </li>
+        <li>
+          <a href="binario.html"> Binária</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="hexadecimal.html"> Hexadecimal</a>
+        </li>
+        <li>
+          <a href="decimal.html"> Decimal</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="container">
+      <p><span>Binário</span> é o caminho da <span>luz</span>.</p>
+    </div>
+  </div>
+  <div class="social">
+    <div class="container">
+      <div class="boxes">
+        <div class="card">
+          <h2> Binário para decimal </h2>
+          <input id="id_binário_para_decimal" type="text" placeholder="Digite o valor em decimal"><br><br>
+          <button class="cssbuttons-io-button botao" onclick="converterBinarioParaDecimal();">
+            Converter
+            <div class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                fill="currentColor"></path>
+              </svg>
+            </div>
+          </button>
+          <div id="div_exibir_decimal" style="display:none;"></div>
+        </div>
+        <div class="card">
+          <h2> Binário para octal</h2>
+          <input id="id_binário_para_octal" type="text" placeholder="Digite o valor em decimal"><br><br>
+          <button class="cssbuttons-io-button botao" onclick="converterBinarioParaOctal();">
+            Converter
+            <div class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                fill="currentColor"></path>
+              </svg>
+            </div>
+          </button>
+          <div id="div_exibir_octal" style="display:none;"></div>
+        </div>
+        <div class="card">
+          <h2> Binário para hexadecimal</h2>
+          <input id="id_binário_para_hexa" type="text" placeholder="Digite o valor em decimal"><br><br>
+          <button class="cssbuttons-io-button botao" onclick="converterBinarioParaHexa();">
+            Converter
+            <div class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                fill="currentColor"></path>
+              </svg>
+            </div>
+          </button>
+          <div id="div_exibir_hexa" style="display:none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <h4>Feito por Eduarda Dias &copy; 2024</h4>
+      <span class="version">v1.0.0</span>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>

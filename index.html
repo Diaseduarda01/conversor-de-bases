@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Bases</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <a class="titulo" href="index.html">
+        <h1 >Conversor de Bases</h1>
+      </a>
+      <ul class="navbar">
+        <li class="agora">
+          <a href="Octal.html">Octal</a>
+        </li>
+        <li>
+          <a href="binario.html">Binária</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="hexadecimal.html">Hexadecimal</a>
+        </li>
+        <li>
+          <a href="decimal.html">Decimal</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="container">
+      <p><span>Binário</span> é o caminho da <span>luz</span>.</p>
+    </div>
+  </div>
+  <div class="social">
+    <div class="container">
+      <div class="boxes">
+
+        <!-- Subtração -->
+        <div class="box">
+          <h2>Subtração</h2>
+          <!-- Primeira seleção de base -->
+          <div class="input-select-container">
+            <select id="base1_subtracao">
+              <option value="">Selecione a base</option>
+              <option value="2">Binário</option>
+              <option value="8">Octal</option>
+              <option value="10">Decimal</option>
+              <option value="16">Hexadecimal</option>
+            </select><br><br>
+            <input id="valor1_subtracao" type="text" placeholder="Digite o primeiro valor"><br>
+          </div>
+          <br>
+          <!-- Segunda seleção de base -->
+          <div class="input-select-container">
+            <select id="base2_subtracao">
+              <option value="">Selecione a base</option>
+              <option value="2">Binário</option>
+              <option value="8">Octal</option>
+              <option value="10">Decimal</option>
+              <option value="16">Hexadecimal</option>
+            </select><br><br>
+            <input id="valor2_subtracao" type="text" placeholder="Digite o segundo valor"><br>
+          </div>
+
+          <!-- Seleção de base para o resultado --><br>
+          <div class="select-container">
+            <select id="base_resultado_subtracao">
+              <option value="">Selecione a base</option>
+              <option value="2">Binário</option>
+              <option value="8">Octal</option>
+              <option value="10">Decimal</option>
+              <option value="16">Hexadecimal</option>
+            </select><br><br>
+          </div>
+          <br>
+          <!-- Exibir resultado -->
+          <div id="div_exibir_resultado_subtracao" style="display:none;"></div>
+          <button class="cssbuttons-io-button" onclick="realizarSubtracao()">
+            Subtrair
+            <div class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+
+        <!-- Soma -->
+        <div class="box">
+          <h2>Soma</h2>
+          <!-- Primeira seleção de base -->
+          <div class="input-select-container">
+            <select id="base1_soma">
+              <option value="">Selecione a base</option>
+              <option value="2">Binário</option>
+              <option value="8">Octal</option>
+              <option value="10">Decimal</option>
+              <option value="16">Hexadecimal</option>
+            </select><br><br>
+            <input id="valor1_soma" type="text" placeholder="Digite o primeiro valor"><br>
+          </div>
+          <br>
+          <!-- Segunda seleção de base -->
+          <div class="input-select-container">
+            <select id="base2_soma">
+              <option value="">Selecione a base</option>
+              <option value="2">Binário</option>
+              <option value="8">Octal</option>
+              <option value="10">Decimal</option>
+              <option value="16">Hexadecimal</option>
+            </select><br><br>
+            <input id="valor2_soma" type="text" placeholder="Digite o segundo valor"><br>
+          </div>
+
+          <!-- Seleção de base para o resultado --><br>
+          <div class="select-container">
+            <select id="base_resultado_soma">
+              <option value="">Selecione a base</option>
+              <option value="2">Binário</option>
+              <option value="8">Octal</option>
+              <option value="10">Decimal</option>
+              <option value="16">Hexadecimal</option>
+            </select><br><br>
+          </div>
+          <br>
+          <!-- Exibir resultado -->
+          <div id="div_exibir_resultado_soma" style="display:none;"></div>
+          <button class="cssbuttons-io-button" onclick="realizarSoma();">
+            Somar
+            <div class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+
+        <!-- Divisão -->
+        <div class="box">
+          <h2>Divisão</h2>
+          <!-- Primeira seleção de base -->
+          <div class="input-select-container">
+            <select id="base1_divisao">
+              <option value="">Selecione a base</option>
+              <option value="2">Binário</option>
+              <option value="8">Octal</option>
+              <option value="10">Decimal</option>
+              <option value="16">Hexadecimal</option>
+            </select><br><br>
+            <input id="valor1_divisao" type="text" placeholder="Digite o primeiro valor"><br>
+          </div>
+          <br>
+          <!-- Segunda seleção de base -->
+          <div class="input-select-container">
+            <select id="base2_divisao">
+              <option value="">Selecione a base</option>
+              <option value="2">Binário</option>
+              <option value="8">Octal</option>
+              <option value="10">Decimal</option>
+              <option value="16">Hexadecimal</option>
+            </select><br><br>
+            <input id="valor2_divisao" type="text" placeholder="Digite o divisor"><br>
+          </div>
+
+          <!-- Seleção de base para o resultado --><br>
+          <div class="select-container">
+            <select id="base_resultado_divisao">
+              <option value="">Selecione a base</option>
+              <option value="2">Binário</option>
+              <option value="8">Octal</option>
+              <option value="10">Decimal</option>
+              <option value="16">Hexadecimal</option>
+            </select><br><br>
+          </div>
+          <br>
+          <!-- Exibir resultado -->
+          <div id="div_exibir_resultado_divisao" style="display:none;"></div>
+          <button class="cssbuttons-io-button" onclick="realizarDivisao();">
+            Dividir
+            <div class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+
+        <!-- Multiplicação -->
+        <div class="box">
+          <h2>Multiplicação</h2>
+          <!-- Primeira seleção de base -->
+          <div class="input-select-container">
+            <select id="base1_multiplicacao">
+              <option value="">Selecione a base</option>
+              <option value="2">Binário</option>
+              <option value="8">Octal</option>
+              <option value="10">Decimal</option>
+              <option value="16">Hexadecimal</option>
+            </select><br><br>
+            <input id="valor1_multiplicacao" type="text" placeholder="Digite o primeiro valor"><br>
+          </div>
+          <br>
+          <!-- Segunda seleção de base -->
+          <div class="input-select-container">
+            <select id="base2_multiplicacao">
+              <option value="">Selecione a base</option>
+              <option value="2">Binário</option>
+              <option value="8">Octal</option>
+              <option value="10">Decimal</option>
+              <option value="16">Hexadecimal</option>
+            </select><br><br>
+            <input id="valor2_multiplicacao" type="text" placeholder="Digite o segundo valor"><br>
+          </div><br>
+
+          <!-- Seleção de base para o resultado -->
+          <div class="select-container">
+            <select id="base_resultado_multiplicacao">
+              <option value="">Selecione a base</option>
+              <option value="2">Binário</option>
+              <option value="8">Octal</option>
+              <option value="10">Decimal</option>
+              <option value="16">Hexadecimal</option>
+            </select><br><br>
+          </div>
+          <br>
+          <!-- Exibir resultado -->
+          <div id="div_exibir_resultado_multiplicacao" style="display:none;"></div>
+          <button class="cssbuttons-io-button" onclick="realizarMultiplicacao();">
+            Multiplicar
+            <div class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="sociall">
+    <div class="container">
+      <div class="boxess">
+        <div class="card">
+          <h2> ASCII </h2>
+          <input id="input_ascii" type="text" placeholder="Digite um caracter" maxlength="1"><br><br> 
+          <button class="cssbuttons-io-button botao" onclick="converterCaracter();">
+            Converter
+            <div class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                fill="currentColor"></path>
+              </svg>
+            </div>
+          </button>
+          <div id="div_output" style="display:none;"></div>
+        </div>
+        <div class="card">
+          <h2>O que é?</h2>
+          <p>A tabela ASCII é um padrão que converte letras, números e símbolos em códigos numéricos, usados por computadores. </p>
+      </div>
+      
+       
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <h4>Feito por Eduarda Dias &copy; 2024</h4>
+      <span class="version">v1.0.0</span>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
