@@ -19,7 +19,7 @@ O conversor foi projetado para ser utilizado em **telas de computador**, proporc
 
 ## 🌐 Acesse o Projeto
 
-Você pode acessar o projeto hospedado através do seguinte link: [Conversor de Bases]([link-do-seu-site](https://diaseduarda01.github.io/conversor-de-bases/))
+Você pode acessar o projeto hospedado através do seguinte link: [Conversor-de-Bases](https://diaseduarda01.github.io/conversor-de-bases/)
 
   
 ## 🎯 Objetivo
